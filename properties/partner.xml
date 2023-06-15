@@ -1,0 +1,14 @@
+<Properties>
+<Boolean id="DefaultWindowed">false</Boolean>
+<String id="PartnerName">PopCap Games</String> 
+<String id="ProdName">Venice</String> 
+<String id="PartnerImage">developer_logo.png</String> 
+<String id="RegistryKey">PopCap\Venice</String>
+<String id="Title">Venice Deluxe</String>
+
+<String id="DisplayName">Venice Deluxe</String>
+<String id="Offering">96</String>
+<Integer id="Width">640</Integer>
+<Integer id="Height">480</Integer>
+<Boolean id="VistaCompliant">true</Boolean> 
+</Properties>

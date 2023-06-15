@@ -1,0 +1,593 @@
+i<global game_mode="endless">				//how the scrolling works
+
+
+<global reload_time="200">					//how long it takes for the gondola to queue up the next shot
+											//this is the actual animation
+											
+<global cascading_combos="0">				//1 for old style of combos, 0 for no combos
+
+<global toss_on_filled_slot="1">			//if this is 1, every slot filled will toss out a jewel
+
+<global toss_on_filled_plate="0">			//if this is 1, every filled plate will throw off all of its
+											//slots
+
+<global number_of_unique_slots="5">			//the number of DIFFERENT slots/jewels
+
+
+<global blocking_slots="1">					//1 for shots to bounce off of filled slots,
+											//0 to not
+
+<global plate_move_when_full_slot_hit="1">  //will the plate react when an already filled
+											//slot is hit?
+
+<global bounce_off_top="1">					//1 to have shots bounce off the top of the
+											//screen. 0 to disappear
+
+<global bumper_fade_point="520">			//this is the vertical point at which
+											//bumpers fade out.. 600 is the bottom
+											//of the screen
+
+<global fire_while_still_pieces="1">		//allow a shot to be fired while pieces are
+											//still floating around
+											
+<global scroll_while_still_pieces="1">		//1 to scroll the screen while pieces are
+											//still flying around
+
+<global base_scroll_speed="0.0">			//how fast the screen scrolls down .01
+
+<global scrolling_slow_point="380">			//the "dead point" of the scrolling
+
+<global push_on_shot_fired=".07">				//.07 how much push you get when a shot is fired
+
+<global push_on_filled_slot="-.2">			//-.2 how much push you get if a slot is filled
+
+<global push_on_combo="-.3">					//how much vertical push you get on a combo
+
+<global earthquake_point="380">				//what y point to start shaking the screen
+											//and warn user
+
+<global push_filled_plate="-.4">			//how much to scroll up if a plate is filled
+
+<global initial_difficulty=".010">			//what difficulty to start with
+
+<global max_difficulty=".5">				//difficulty cap
+
+<global min_difficulty=".001">				//difficulty minimum
+
+<global difficulty_change_on_win=".01">		//how much harder it gets if u win a level
+
+<global difficulty_change_on_loss=".02">	//how much easier it gets if you lose
+
+<global cupid_wait_ms="10000">				//how long a player has to go without a fill
+											//before cupid comes to help
+
+<global bumps_to_explode="20">				//how many times a jewel will bank before
+											//exploding
+
+
+
+
+<image name="gfx\sparkle.png">
+<image name="gfx\waterline02.png" frame_width="39" frame_height="39" num_frames="24" fps="20">
+<image name="gfx\Background01\bird.png" frame_width="24" frame_height="24" num_frames="8" fps="15">
+<image name="gfx\cupid.png" frame_width="100" frame_height="100" num_frames="5" fps="15">
+<image name="gfx\particle2.png">
+<image name="gfx\white_particle.png">
+
+<loading percent="4"></loading>
+
+<image name="gfx\plate1.png">
+<image name="gfx\slot2.png">
+<image name="gfx\slot3.png">
+<image name="gfx\slot4.png">
+<image name="gfx\slot5.png">
+<image name="gfx\slot6.png">
+<image name="gfx\slot7.png">
+<image name="gfx\jewel2.png">
+<image name="gfx\jewel3.png">
+<image name="gfx\jewel4.png">
+<image name="gfx\jewel5.png">
+<image name="gfx\jewel6.png">
+<image name="gfx\jewel7.png">
+<image name="gfx\shooter.png">
+<image name="gfx\beam.png">
+<image name="gfx\outline2.png">
+<image name="gfx\outline3.png">
+<image name="gfx\outline4.png">
+<image name="gfx\outline5.png">
+<image name="gfx\outline6.png">
+<image name="gfx\outline7.png">
+<image name="gfx\menu_button.png" frame_width="54" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\slider.png">
+<image name="gfx\title_gondola.png">
+<image name="gfx\title_gondola_rope.png">
+<image name="gfx\pigeon_front.png">
+
+<loading percent="8"></loading>
+
+<image name="gfx\pigeon_fly.png" frame_width="50" frame_height="50" num_frames="8" fps="60">
+<image name="gfx\pwrup_supershot.png">
+<image name="gfx\pwrup_fast_shot.png">
+<image name="gfx\pwrup_back.png">
+<image name="gfx\pwrup_wild.png">
+<image name="gfx\pwrup_+1.png">
+<image name="gfx\pwrup_cupid.png">
+<image name="gfx\pwrup_x2.png">
+<image name="gfx\pwrup_wild_shape.png">
+<image name="gfx\star.png">
+<loading percent="12"></loading>
+<image name="gfx\pwrup_wings_shooter.png" frame_width="83" frame_height="70" num_frames="2" fps="20">
+<image name="gfx\burst.png">
+<image name="gfx\button_rename.png" frame_width="54" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\button_new.png" frame_width="54" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\button_delete.png" frame_width="54" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\button_cancel.png" frame_width="54" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\button_accept.png" frame_width="54" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\button_yes.png" frame_width="54" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\button_no.png" frame_width="54" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\button_ok.png" frame_width="54" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\button_newgame.png" frame_width="80" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\button_continue.png" frame_width="80" frame_height="24" num_frames="2" fps="15">
+<image name="gfx\water_drop.png">
+
+
+
+
+<font name="gfx\font1.png" character_set="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,./?:`'+-=!@#$%()|" letter_height="48">
+	<kern char="R" left="2" right="-5">
+	<kern char="V" left="1" right="-1">
+</font>
+
+<font name="gfx\font1_small.png" character_set="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,./?:`'+-=!@#$%()|" letter_height="24">
+	<kern char="R" left="1" right="-2">
+</font>
+<font name="gfx\font1_tiny.png" character_set="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,./?:`'+-=!@#$%()|" letter_height="18">
+<font name="gfx\sysfont.png" character_set="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()+-=_;:,.'`?/{}[]\|abcdefghijklmnopqrstuvwxyz" letter_height="15">
+<font name="gfx\font2.png" character_set="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~`!@#$%^&*()-_=+[{]};:'`,<.>/?" letter_height="43">
+	<kern char="f" left="4" right="-4">
+	<kern char="y" left="4" right="-2">
+	<kern char="g" left="2" right="-1">
+	<kern char="p" left="2" right="-1">
+	<kern char="w" left="0" right="-1">
+	<kern char="a" left="1" right="-1">
+	<kern char="t" left="0" right="-1">
+	<kern char="r" left="0" right="-1">
+</font>
+
+<loading percent="20"></loading>
+
+<sound name="audio\basket.ogg"></sound>
+<sound name="audio\bonus_caught.ogg"></sound>
+<sound name="audio\brick_hit.ogg"></sound>
+<sound name="audio\bump.ogg"></sound>
+<sound name="audio\click.ogg"></sound>
+<sound name="audio\cupid_catch.ogg"></sound>
+<sound name="audio\cupid_flap.ogg"></sound>
+<sound name="audio\fade_in.ogg"></sound>
+<sound name="audio\fall.ogg"></sound>
+<sound name="audio\fastshot.ogg"></sound>
+<sound name="audio\final_victory.ogg" loop="1"></sound>
+<sound name="audio\hot.ogg"></sound>
+<sound name="audio\ingame_1_intro.ogg"></sound>
+<sound name="audio\ingame_1_win.ogg"></sound>
+<loading percent="25"></loading>
+<sound name="audio\ingame_2_intro.ogg"></sound>
+<sound name="audio\ingame_bonus_body.ogg"></sound>
+<sound name="audio\load_plate.ogg"></sound>
+<sound name="audio\minute.ogg"></sound>
+<sound name="audio\panel.ogg"></sound>
+<sound name="audio\pigeon.ogg"></sound>
+<sound name="audio\endless_sink.ogg"></sound>
+<loading percent="30"></loading>
+<sound name="audio\place.ogg"></sound>
+<sound name="audio\plate.ogg"></sound>
+<sound name="audio\plate_combo.ogg"></sound>
+<sound name="audio\pop.ogg"></sound>
+<sound name="audio\powerup_caught.ogg"></sound>
+<sound name="audio\rise.ogg"></sound>
+<sound name="audio\shake.ogg"></sound>
+<sound name="audio\splash.ogg"></sound>
+<sound name="audio\stats.ogg"></sound>
+<sound name="audio\stats2.ogg"></sound>
+<sound name="audio\super_tumble.ogg"></sound>
+<sound name="audio\throw.ogg"></sound>
+<loading percent="35"></loading>
+<sound name="audio\tone.ogg"></sound>
+<sound name="audio\toss.ogg"></sound>
+<sound name="audio\trickshot_made.ogg"></sound>
+<sound name="audio\trickshot_missed.ogg"></sound>
+<sound name="audio\turret.ogg"></sound>
+<sound name="audio\victory.ogg"></sound>
+<sound name="audio\warp.ogg"></sound>
+<sound name="audio\wings.ogg"></sound>
+<sound name="audio\break.ogg"></sound>
+<sound name="audio\sink.ogg"></sound>
+<sound name="audio\ouch_cupid.ogg"></sound>
+<loading percent="38"></loading>
+
+
+
+
+
+<game>
+	<level_file name="levels\main_menu.xml">
+	<level_file name="levels\high_scores.xml">
+	<level_file name="levels\high_scores_all.xml">
+	<level_file name="levels\high_scores_endless.xml">
+	<level_file name="levels\hs_journey.xml">
+	<level_file name="levels\hs_journey2.xml">
+	<level_file name="levels\hs_flood.xml">
+	<level_file name="levels\hs_endless.xml">
+	<level_file name="levels\hs_trickshots.xml">
+	<level_file name="levels\credits.xml">
+	<level_file name="levels\loading_credits.xml">
+	<level_file name="levels\in_game_menu.xml">
+	<level_file name="levels\pause_menu.xml">
+	<level_file name="levels\options_menu.xml">
+	<level_file name="levels\no_windowed.xml">
+	<level_file name="levels\3d_not_supported.xml">
+	<level_file name="levels\3d_not_recommended.xml">
+	<level_file name="levels\too_many_users.xml">
+	<level_file name="levels\level_summary.xml">
+	<level_file name="levels\relaxed_summary.xml">
+	<level_file name="levels\cupid_save.xml">
+	<level_file name="levels\explain_flood.xml">
+	<level_file name="levels\exit_game_confirm.xml">
+	<level_file name="levels\loading_main_menu.xml">
+
+
+	<loading percent="40"></loading>
+
+
+	<level_file name="levels\bonus_level_summary.xml">
+	<level_file name="levels\trickshot_summary.xml">
+	<level_file name="levels\trickymode_summary.xml">
+	<level_file name="levels\endless_summary.xml">
+	<level_file name="levels\input_name.xml">
+	<level_file name="levels\change_name.xml">
+	<level_file name="levels\user_menu.xml">
+	<level_file name="levels\levelselect.xml">
+	<level_file name="levels\instructions.xml">
+	<level_file name="levels\tutorial.xml">
+	<level_file name="levels\tutorial2.xml">
+	<level_file name="levels\loading.xml">
+	<level_file name="levels\loading_levelselect.xml">
+	<level_file name="levels\loading_instructions.xml">
+	<level_file name="levels\invalid_profile_name.xml">
+	<loading percent="44"></loading>
+
+	<level_file name="levels\delete_user_confirm.xml">
+	<level_file name="levels\one_user_left.xml">
+	<level_file name="levels\delete_event_picker.xml">
+	<level_file name="levels\insert_event_picker.xml">
+	<level_file name="levels\exit_confirm.xml">
+	<level_file name="levels\cupid_message.xml">
+	<level_file name="levels\continue_game.xml">
+	<level_file name="levels\continue_relaxed.xml">
+	<level_file name="levels\endless.xml">
+	<level_file name="levels\mode_select_menu.xml">
+
+	<loading percent="48"></loading>
+
+	<level_file_game name="levels\background01_01.xml">
+	<level_file_game name="levels\background01_02.xml">
+	<level_file_game name="levels\bonus01_01.xml">
+	<level_file_game name="levels\background01_03.xml">
+	<level_file_game name="levels\background01_04.xml">
+	<level_file_game name="levels\bonus01_02.xml">
+	<level_file_game name="levels\background01_05.xml">
+	<level_file_game name="levels\background01_06.xml">
+	<level_file_game name="levels\bonus01_03.xml">
+
+	<loading percent="52"></loading>
+
+
+	<level_file_game name="levels\background03_01.xml">
+	<level_file_game name="levels\background03_02.xml">
+	<level_file_game name="levels\bonus03_01.xml">
+	<level_file_game name="levels\background03_03.xml">
+	<level_file_game name="levels\background03_04.xml">
+	<level_file_game name="levels\bonus03_02.xml">
+	<level_file_game name="levels\background03_05.xml">
+	<level_file_game name="levels\background03_06.xml">
+	<level_file_game name="levels\bonus03_03.xml">
+
+	<loading percent="54"></loading>
+
+
+	<level_file_game name="levels\background04_01.xml">
+	<level_file_game name="levels\background04_02.xml">
+	<level_file_game name="levels\bonus04_01.xml">
+	<level_file_game name="levels\background04_03.xml">
+	<level_file_game name="levels\background04_04.xml">
+	<level_file_game name="levels\bonus04_02.xml">
+	<level_file_game name="levels\background04_05.xml">
+	<level_file_game name="levels\background04_06.xml">
+	<level_file_game name="levels\bonus04_03.xml">
+
+	<loading percent="56"></loading>
+
+	<level_file_game name="levels\background05_01.xml">
+	<level_file_game name="levels\background05_02.xml">
+	<level_file_game name="levels\bonus05_01.xml">
+	<level_file_game name="levels\background05_03.xml">
+	<level_file_game name="levels\background05_04.xml">
+	<level_file_game name="levels\bonus05_02.xml">
+	<level_file_game name="levels\background05_05.xml">
+	<level_file_game name="levels\background05_06.xml">
+	<level_file_game name="levels\bonus05_03.xml">
+
+	<loading percent="58"></loading>
+
+	<level_file_game name="levels\background06_01.xml">
+	<level_file_game name="levels\background06_02.xml">
+	<level_file_game name="levels\bonus06_01.xml">
+	<level_file_game name="levels\background06_03.xml">
+	<level_file_game name="levels\background06_04.xml">
+	<level_file_game name="levels\bonus06_02.xml">
+	<level_file_game name="levels\background06_05.xml">
+	<level_file_game name="levels\background06_06.xml">
+	<level_file_game name="levels\bonus06_03.xml">
+
+	<loading percent="60"></loading>
+
+	<level_file_game name="levels\background02_01.xml">
+	<level_file_game name="levels\background02_02.xml">
+	<level_file_game name="levels\bonus02_01.xml">
+	<level_file_game name="levels\background02_03.xml">
+	<level_file_game name="levels\background02_04.xml">
+	<level_file_game name="levels\bonus02_02.xml">
+	<level_file_game name="levels\background02_05.xml">
+	<level_file_game name="levels\background02_06.xml">
+	<level_file_game name="levels\bonus02_03.xml">
+
+	<loading percent="62"></loading>
+
+
+	<level_file_game name="levels\background07_01.xml">
+	<level_file_game name="levels\background07_02.xml">
+	<level_file_game name="levels\bonus07_01.xml">
+	<level_file_game name="levels\background07_03.xml">
+	<level_file_game name="levels\background07_04.xml">
+	<level_file_game name="levels\bonus07_02.xml">
+	<level_file_game name="levels\background07_05.xml">
+	<level_file_game name="levels\background07_06.xml">
+	<level_file_game name="levels\bonus07_03.xml">
+
+	<loading percent="66"></loading>
+
+
+	<level_file_game name="levels\background08_01.xml">
+	<level_file_game name="levels\background08_02.xml">
+	<level_file_game name="levels\bonus08_01.xml">
+	<level_file_game name="levels\background08_03.xml">
+	<level_file_game name="levels\background08_04.xml">
+	<level_file_game name="levels\bonus08_02.xml">
+	<level_file_game name="levels\background08_05.xml">
+	<level_file_game name="levels\background08_06.xml">
+
+	<loading percent="70"></loading>
+
+
+	<level_file_game name="levels\win_sequence.xml">
+	<level_file_game name="levels\high_scores.xml">
+
+	<loading percent="72"></loading>
+	
+	<level_file_trick name="levels\tricky_01_01.xml">
+	<level_file_trick name="levels\tricky_01_02.xml">
+	<level_file_trick name="levels\tricky_01_03.xml">
+	<level_file_trick name="levels\tricky_01_04.xml">
+	<level_file_trick name="levels\tricky_01_05.xml">
+	<level_file_trick name="levels\tricky_01_06.xml">
+	<level_file_trick name="levels\tricky_01_07.xml">
+	<level_file_trick name="levels\tricky_01_08.xml">
+	<level_file_trick name="levels\tricky_01_09.xml">
+	<level_file_trick name="levels\tricky_01_10.xml">
+	<level_file_trick name="levels\bonus01_01.xml">
+	<level_file_trick name="levels\bonus01_02.xml">
+	<level_file_trick name="levels\bonus01_03.xml">
+
+	<loading percent="76"></loading>
+
+	<level_file_trick name="levels\tricky_03_01.xml">
+	<level_file_trick name="levels\tricky_03_02.xml">
+	<level_file_trick name="levels\tricky_03_03.xml">
+	<level_file_trick name="levels\tricky_03_04.xml">
+	<level_file_trick name="levels\tricky_03_05.xml">
+	<level_file_trick name="levels\tricky_03_06.xml">
+	<level_file_trick name="levels\tricky_03_07.xml">
+	<level_file_trick name="levels\tricky_03_08.xml">
+	<level_file_trick name="levels\tricky_03_09.xml">
+	<level_file_trick name="levels\tricky_03_10.xml">
+	<level_file_trick name="levels\bonus03_01.xml">
+	<level_file_trick name="levels\bonus03_02.xml">
+	<level_file_trick name="levels\bonus03_03.xml">
+
+	<loading percent="78"></loading>
+
+	<level_file_trick name="levels\tricky_04_01.xml">
+	<level_file_trick name="levels\tricky_04_02.xml">
+	<level_file_trick name="levels\tricky_04_03.xml">
+	<level_file_trick name="levels\tricky_04_04.xml">
+	<level_file_trick name="levels\tricky_04_05.xml">
+	<level_file_trick name="levels\tricky_04_06.xml">
+	<level_file_trick name="levels\tricky_04_07.xml">
+	<level_file_trick name="levels\tricky_04_08.xml">
+	<level_file_trick name="levels\tricky_04_09.xml">
+	<level_file_trick name="levels\tricky_04_10.xml">
+	<level_file_trick name="levels\bonus04_01.xml">
+	<level_file_trick name="levels\bonus04_02.xml">
+	<level_file_trick name="levels\bonus04_03.xml">
+
+	<loading percent="80"></loading>
+
+
+	<level_file_trick name="levels\tricky_05_01.xml">
+	<level_file_trick name="levels\tricky_05_02.xml">
+	<level_file_trick name="levels\tricky_05_03.xml">
+	<level_file_trick name="levels\tricky_05_04.xml">
+	<level_file_trick name="levels\tricky_05_05.xml">
+	<level_file_trick name="levels\tricky_05_06.xml">
+	<level_file_trick name="levels\tricky_05_07.xml">
+	<level_file_trick name="levels\tricky_05_08.xml">
+	<level_file_trick name="levels\tricky_05_09.xml">
+	<level_file_trick name="levels\tricky_05_10.xml">
+	<level_file_trick name="levels\bonus05_01.xml">
+	<level_file_trick name="levels\bonus05_02.xml">
+	<level_file_trick name="levels\bonus05_03.xml">
+
+	<loading percent="82"></loading>
+
+
+	<level_file_trick name="levels\tricky_06_01.xml">
+	<level_file_trick name="levels\tricky_06_02.xml">
+	<level_file_trick name="levels\tricky_06_03.xml">
+	<level_file_trick name="levels\tricky_06_04.xml">
+	<level_file_trick name="levels\tricky_06_05.xml">
+	<level_file_trick name="levels\tricky_06_06.xml">
+	<level_file_trick name="levels\tricky_06_07.xml">
+	<level_file_trick name="levels\tricky_06_08.xml">
+	<level_file_trick name="levels\tricky_06_09.xml">
+	<level_file_trick name="levels\tricky_06_10.xml">
+	<level_file_trick name="levels\bonus06_01.xml">
+	<level_file_trick name="levels\bonus06_02.xml">
+	<level_file_trick name="levels\bonus06_03.xml">
+
+	<loading percent="84"></loading>
+
+
+	<level_file_trick name="levels\tricky_02_01.xml">
+	<level_file_trick name="levels\tricky_02_02.xml">
+	<level_file_trick name="levels\tricky_02_03.xml">
+	<level_file_trick name="levels\tricky_02_04.xml">
+	<level_file_trick name="levels\tricky_02_05.xml">
+	<level_file_trick name="levels\tricky_02_06.xml">
+	<level_file_trick name="levels\tricky_02_07.xml">
+	<level_file_trick name="levels\tricky_02_08.xml">
+	<level_file_trick name="levels\tricky_02_09.xml">
+	<level_file_trick name="levels\tricky_02_10.xml">
+	<level_file_trick name="levels\bonus02_01.xml">
+	<level_file_trick name="levels\bonus02_02.xml">
+	<level_file_trick name="levels\bonus02_03.xml">
+
+	<loading percent="88"></loading>
+
+	<level_file_trick name="levels\tricky_07_01.xml">
+	<level_file_trick name="levels\tricky_07_02.xml">
+	<level_file_trick name="levels\tricky_07_03.xml">
+	<level_file_trick name="levels\tricky_07_04.xml">
+	<level_file_trick name="levels\tricky_07_05.xml">
+	<level_file_trick name="levels\tricky_07_06.xml">
+	<level_file_trick name="levels\tricky_07_07.xml">
+	<level_file_trick name="levels\tricky_07_08.xml">
+	<level_file_trick name="levels\tricky_07_09.xml">
+	<level_file_trick name="levels\tricky_07_10.xml">
+	<level_file_trick name="levels\bonus07_01.xml">
+	<level_file_trick name="levels\bonus07_02.xml">
+	<level_file_trick name="levels\bonus07_03.xml">
+
+	<loading percent="95"></loading>
+
+
+	<level_file_trick name="levels\tricky_08_01.xml">
+	<level_file_trick name="levels\tricky_08_02.xml">
+	<level_file_trick name="levels\tricky_08_03.xml">
+	<level_file_trick name="levels\tricky_08_04.xml">
+	<level_file_trick name="levels\tricky_08_05.xml">
+	<level_file_trick name="levels\tricky_08_06.xml">
+	<level_file_trick name="levels\tricky_08_07.xml">
+	<level_file_trick name="levels\tricky_08_08.xml">
+	<level_file_trick name="levels\tricky_08_09.xml">
+	<level_file_trick name="levels\tricky_08_10.xml">
+	<level_file_trick name="levels\bonus08_01.xml">
+	<level_file_trick name="levels\bonus08_02.xml">
+	<level_file_trick name="levels\bonus08_03.xml">
+
+
+
+	<level_file_relaxed name="levels\background01_01.xml">
+	<level_file_relaxed name="levels\background01_02.xml">
+	<level_file_relaxed name="levels\tricky_01_01.xml">
+	<level_file_relaxed name="levels\relaxed01_03.xml">
+	<level_file_relaxed name="levels\relaxed01_04.xml">
+	<level_file_relaxed name="levels\tricky_01_02.xml">
+	<level_file_relaxed name="levels\relaxed01_05.xml">
+	<level_file_relaxed name="levels\relaxed01_06.xml">
+	<level_file_relaxed name="levels\tricky_01_03.xml">
+
+	<level_file_relaxed name="levels\relaxed03_01.xml">
+	<level_file_relaxed name="levels\relaxed03_02.xml">
+	<level_file_relaxed name="levels\tricky_03_01.xml">
+	<level_file_relaxed name="levels\relaxed03_03.xml">
+	<level_file_relaxed name="levels\relaxed03_04.xml">
+	<level_file_relaxed name="levels\tricky_03_02.xml">
+	<level_file_relaxed name="levels\relaxed03_05.xml">
+	<level_file_relaxed name="levels\relaxed03_06.xml">
+	<level_file_relaxed name="levels\tricky_03_03.xml">
+
+	<level_file_relaxed name="levels\relaxed04_01.xml">
+	<level_file_relaxed name="levels\background04_02.xml">
+	<level_file_relaxed name="levels\tricky_04_01.xml">
+	<level_file_relaxed name="levels\relaxed04_03.xml">
+	<level_file_relaxed name="levels\relaxed04_04.xml">
+	<level_file_relaxed name="levels\tricky_04_02.xml">
+	<level_file_relaxed name="levels\relaxed04_05.xml">
+	<level_file_relaxed name="levels\relaxed04_06.xml">
+	<level_file_relaxed name="levels\tricky_04_03.xml">
+
+	<level_file_relaxed name="levels\relaxed05_01.xml">
+	<level_file_relaxed name="levels\relaxed05_02.xml">
+	<level_file_relaxed name="levels\tricky_05_01.xml">
+	<level_file_relaxed name="levels\relaxed05_03.xml">
+	<level_file_relaxed name="levels\relaxed05_04.xml">
+	<level_file_relaxed name="levels\tricky_05_02.xml">
+	<level_file_relaxed name="levels\relaxed05_05.xml">
+	<level_file_relaxed name="levels\relaxed05_06.xml">
+	<level_file_relaxed name="levels\tricky_05_03.xml">
+
+	<level_file_relaxed name="levels\relaxed06_01.xml">
+	<level_file_relaxed name="levels\relaxed06_02.xml">
+	<level_file_relaxed name="levels\tricky_06_01.xml">
+	<level_file_relaxed name="levels\relaxed06_03.xml">
+	<level_file_relaxed name="levels\relaxed06_04.xml">
+	<level_file_relaxed name="levels\tricky_06_02.xml">
+	<level_file_relaxed name="levels\relaxed06_05.xml">
+	<level_file_relaxed name="levels\relaxed06_06.xml">
+	<level_file_relaxed name="levels\tricky_06_03.xml">
+
+	<level_file_relaxed name="levels\relaxed02_01.xml">
+	<level_file_relaxed name="levels\relaxed02_02.xml">
+	<level_file_relaxed name="levels\tricky_02_01.xml">
+	<level_file_relaxed name="levels\relaxed02_03.xml">
+	<level_file_relaxed name="levels\relaxed02_04.xml">
+	<level_file_relaxed name="levels\tricky_02_02.xml">
+	<level_file_relaxed name="levels\relaxed02_05.xml">
+	<level_file_relaxed name="levels\relaxed02_06.xml">
+	<level_file_relaxed name="levels\tricky_02_03.xml">
+
+	<level_file_relaxed name="levels\relaxed07_01.xml">
+	<level_file_relaxed name="levels\relaxed07_02.xml">
+	<level_file_relaxed name="levels\tricky_07_01.xml">
+	<level_file_relaxed name="levels\relaxed07_03.xml">
+	<level_file_relaxed name="levels\relaxed07_04.xml">
+	<level_file_relaxed name="levels\tricky_07_02.xml">
+	<level_file_relaxed name="levels\relaxed07_05.xml">
+	<level_file_relaxed name="levels\background07_06.xml">
+	<level_file_relaxed name="levels\tricky_07_03.xml">
+
+	<level_file_relaxed name="levels\relaxed08_01.xml">
+	<level_file_relaxed name="levels\background08_02.xml">
+	<level_file_relaxed name="levels\tricky_08_01.xml">
+	<level_file_relaxed name="levels\relaxed08_03.xml">
+	<level_file_relaxed name="levels\relaxed08_04.xml">
+	<level_file_relaxed name="levels\tricky_08_02.xml">
+	<level_file_relaxed name="levels\relaxed08_05.xml">
+	<level_file_relaxed name="levels\relaxed08_06.xml">
+
+	<level_file_relaxed name="levels\win_sequence.xml">
+	<level_file_relaxed name="levels\high_scores.xml">
+
+
+	<loading percent="99"></loading>
+</game>

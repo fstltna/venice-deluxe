@@ -1,0 +1,41 @@
+END USER LICENSE AGREEMENT
+
+IMPORTANT-READ CAREFULLY BEFORE INSTALLING OR USING THE SOFTWARE:  This PopCap Games End User License Agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and PopCap Games, Inc.  ("PopCap") for the PopCap software product "Venice Deluxe," which includes computer software and associated documentation ("Software").  The Software also includes any updates and supplements to the original Software provided to you by PopCap.  Any product provided along with the Software that is associated with a separate end-user license agreement is licensed to you under the terms of that license agreement.  By installing, copying, downloading, accessing or otherwise using the Software, you agree to be bound by the terms of this EULA.  If you do not agree to the terms of this EULA: (i) do not use or install the Software, and (ii) if you have purchased the Software, promptly return the Software and all accompanying materials with proof of purchase to your place of purchase for a refund.  
+
+SOFTWARE LICENSE.  The Software is confidential and protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.  The Software is licensed, not sold.  
+
+GRANT OF LICENSE.  This EULA grants you a non-exclusive, non-transferable license to install and use a copy of the Software for your personal non-commercial home entertainment use on one personal computer or personal digital assistant.
+
+OTHER RIGHTS AND LIMITATIONS.
+1) No Commercial Use.   You may not use the Software for any commercial purpose.  In particular, save as expressly licensed hereunder you may not:
+	a) Reproduce the Software, by any means, in temporary, permanent or any other form, in whole or in part;
+	b) Translate, adapt, arrange, or otherwise alter the Software;
+	c) Distribute the Software (in whole or in part or any copies thereof) to the public or to any other person;
+	d) Communicate, display or make any performance of the Software to the public;
+	e) Disseminate, sell, give away, hire, lease, offer or expose for sale or distribute the Software, or any other content wholly or partially derived from any of the foregoing;
+	f) Copy or adapt the whole or any part of the Software;
+	g) Remove or alter any copyright or other proprietary notice from the Software; or
+	h) Offer the Software on a pay-per-play, coin-op or other for charge basis.
+2) Limitations on Reverse Engineering, Decompilation and Disassembly.  The Software in source code form (which is not provided to you) includes valuable trade secret information of PopCap.  You may not reverse engineer, decompile, or disassemble the Software or otherwise attempt to gain access to the source code for the Software.  
+3) Transfer.  You may not rent, lease, sell, sublicense, lend or otherwise transfer or assign your rights or obligations under this EULA to any person or entity
+4) Reservation of Rights.  PopCap reserves all rights not expressly granted under this EULA.  
+
+TRIAL VERSIONS.  If the Software was provided to you for trial use for a limited period of time or number of uses, you agree not to use the Software following the expiration of the trial period.  You acknowledge and agree that the Software may include code designed to prevent you from exceeding these limits, and that such code may remain on your computer after deletion of the Software in order to prevent you from installing another copy and repeating the trial period.
+
+TERMINATION.  Either party may terminate this license at any time by giving notice of such termination to the other.  PopCap may satisfy this notice requirement by publishing a notice of termination on the PopCap website, which exists on the "World Wide Web" at the address http://www.popcap.com.  Upon Termination of this EULA for any reason, you will cease using the Software and will destroy all copies of the Software in your possession or control.
+
+COPIES.  PopCap and its suppliers retain all ownership of the Software and all copies thereof.  Except as expressly provided in this EULA, you may not make copies of the Software, except as reasonably necessary to run, install or use the Software in accordance with the uses for which you have been granted this EULA.
+
+EXPORT.  You agree that you will not export or re-export the Software, any part thereof, or any process or service that is the direct product of the Software, except in accordance with all applicable Irish and other relevant countries’ export restrictions.  
+
+GOVERNING LAW AND VENUE.  This Agreement shall for all purposes be governed by and interpreted in accordance with the laws of the Republic of Ireland, but excluding its conflict of laws rules, and specifically excludes the United Nations Convention on Contracts for the International Sale of Goods.  You agree that without prejudice to PopCap's right to take proceedings in relation thereto before any other court of competent jurisdiction, that the courts of Ireland shall have jurisdiction to hear and determine any suit, action or proceeding that may arise out of, or in consideration with this Agreement.
+
+ENTIRE AGREEMENT.  This EULA constitutes the entire agreement between you and PopCap with respect to the Software, and replaces all other agreements or representations, whether written or oral.  The terms of this EULA cannot be modified by any terms in any printed forms used by the parties in performing the EULA, but may be modified by notifying you electronically of such notification as deemed expedient by PopCap from time to time.  If any part of this EULA is held to be unenforceable as written, it will be enforced to the maximum extent allowed by applicable law, and will not affect the enforceability of any other part.  The original of this EULA is in English.  If it is translated into another language, the English language version shall prevail.  
+
+NO WARRANTY.  TO THE MAXIMUM EXTENT PERMITTED BY LAW, POPCAP AND ITS SUPPLIERS MAKE NO, AND HEREBY DISCLAIM,  ALL WARRANTIES, EXPRESS, IMPLIED AND STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS WITH RESPECT TO THE SOFTWARE.  POPCAP AND ITS SUPPLIERS DO NOT WARRANT THAT THE SOFTWARE IS ERROR-FREE OR THAT ACCESS TO THE SOFTWARE WILL BE UNINTERRUPTED AND WITHOUT COMPROMISE TO SECURITY SYSTEMS.  YOU ACKNOWLEDGE AND AGREE THAT YOUR USE OF THE SOFTWARE IS "AS IS," AND "AT YOUR OWN RISK."
+
+LIMITATION OF LIABILITY.  POPCAP AND ITS SUPPLIERS WILL NOT BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR PERSONAL INJURY, LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS OR CONFIDENTIAL INFORMATION, LOSS OF PRIVACY, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF POPCAP OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  IN ANY CASE, THE ENTIRE LIABILITY OF POPCAP AND ITS SUPPLIERS UNDER THIS AGREEMENT AND LIMITED WARRANTY SHALL BE LIMITED TO THE AMOUNT ACTUALLY PAID BY YOU FOR THE SOFTWARE THAT CAUSES THE DAMAGE.  
+ 
+©2007 PopCap Games, Inc. All rights reserved. Venice was developed by Retro64, Inc. The PopCap Games logo is a registered trademark of PopCap Games, Inc.
+
+All other copyrights and trademarks are the property of their respective owners.
